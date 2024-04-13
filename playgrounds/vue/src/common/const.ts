@@ -1,4 +1,5 @@
-import { log1 } from "./utils" 
+import { log1 } from './utils'
+
 export const constValue = 'constValue'
 
 export function wrapperLog1() {

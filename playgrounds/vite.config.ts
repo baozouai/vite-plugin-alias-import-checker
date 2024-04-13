@@ -1,5 +1,6 @@
-import { defineConfig } from "vite";
+import { defineConfig } from 'vite'
 import enhanceLog from 'vite-plugin-enhance-log'
+
 export default defineConfig({
   resolve: {
     alias: {
@@ -10,7 +11,7 @@ export default defineConfig({
   },
   plugins: [
     enhanceLog({
-      colorFileName: true
-    })
-  ]
+      colorFileName: true,
+    }),
+  ],
 })

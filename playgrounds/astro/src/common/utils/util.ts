@@ -1,5 +1,5 @@
 export function logCmmon() {
-  console.log('COMMON');
+  console.log('COMMON')
 }
 
 export function log1() {

@@ -1,5 +1,5 @@
+import { resolve } from 'node:path'
 import { defineConfig } from 'vite'
-import { resolve } from 'path'
 
 import react from '@vitejs/plugin-react-swc'
 import Inspect from 'vite-plugin-inspect'
@@ -19,5 +19,5 @@ export default defineConfig({
       '@hooks': resolve('src/hooks'),
       // '@gm-common/x-request': resolve('src/request'),
     },
-  }
+  },
 })

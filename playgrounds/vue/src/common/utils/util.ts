@@ -1,9 +1,9 @@
 // please use @hooks to import Instead of【../hooks】
 // import { useMounted } from "../../hooks";
-import { useMounted } from "@hooks/useMount";
+import { useMounted } from '@hooks/useMount'
 
 export function useCommon() {
-  useMounted();
+  useMounted()
 }
 
 export function log1() {

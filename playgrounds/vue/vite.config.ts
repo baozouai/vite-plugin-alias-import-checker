@@ -1,5 +1,5 @@
-import { defineConfig } from 'vite'
 import { resolve } from 'node:path'
+import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
 import Inspect from 'vite-plugin-inspect'
 import aliasImportChecker from '../../src'
@@ -16,7 +16,7 @@ const config = defineConfig({
       '@common': resolve(__dirname, './src/common'),
       '@hooks': resolve(__dirname, './src/hooks'),
     },
-  }
+  },
 })
 
 export default config
