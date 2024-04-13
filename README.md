@@ -50,7 +50,8 @@ npm i vite-plugin-alias-import-checker -D
 
 ```ts
 interface Options {
-  
+  /** default error */
+  level?: 'warn' | 'error'
 }
 ```
 ##  🔨 Usage

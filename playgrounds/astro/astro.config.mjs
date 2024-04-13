@@ -8,7 +8,9 @@ import { resolve } from 'node:path'
 // https://astro.build/config
 export default defineConfig({
   vite: mergeConfig(baseConfig, {
-    plugins: [aliasImportChecker(), inspect()],
+    plugins: [aliasImportChecker({
+      level: 'warn',
+    }), inspect()],
     resolve: {
       alias: {
         '@': resolve(process.cwd(), './src'),

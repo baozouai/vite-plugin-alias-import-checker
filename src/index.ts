@@ -1,9 +1,15 @@
 import { dirname } from 'node:path';
 import { type Plugin, createFilter } from 'vite';
+
+export interface ResolveImportCheckerOptions {
+  level?: 'error' | 'warn';
+}
+
 /**
- * 检测 alias import
+ * a Vite plugin designed to validate and ensure the correctness of alias imports in your project.
  */
-export default function ResolveImportChecker() {
+export default function ResolveImportChecker(options?: ResolveImportCheckerOptions) {
+  const { level = 'error' } = options || {};
   const filter = createFilter(
     [/\.[jt]sx?$/, /\.vue$/, /\.astro$/],
     [/[\\/]node_modules[\\/]/, /[\\/]\.git[\\/]/],
@@ -68,7 +74,8 @@ export default function ResolveImportChecker() {
                 const start = (item as any).start as number;
 
                 const message = `please use ${Replace2Find[importCtxReaplace as string]} to import instead of【${importSource}】 `;
-                this.error(message, start);
+                const method = level === 'error' ? 'error' : 'warn';
+                this[method](message, start);
               }
             }
           }
