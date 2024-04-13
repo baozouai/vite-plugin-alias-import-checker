@@ -23,7 +23,7 @@
 
 [test-badge]: https://github.com/baozouai/vite-plugin-alias-import-checker/actions/workflows/ci.yml/badge.svg
 
-[codecov-badge]: https://codecov.io/github/baozouai/plugin-vite-plugin-alias-import-checker/branch/master/graph/badge.svg
+[codecov-badge]: https://codecov.io/github/baozouai/plugin-vite-plugin-alias-import-checker/branch/main/graph/badge.svg
 
 
 </div>
