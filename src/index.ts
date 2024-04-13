@@ -11,7 +11,7 @@ export interface ResolveImportCheckerOptions {
 export default function ResolveImportChecker(options?: ResolveImportCheckerOptions) {
   const { level = 'error' } = options || {}
   const filter = createFilter(
-    [/\.[jt]sx?$/, /\.vue$/, /\.astro$/],
+    [/\.[jt]sx?$/, /\.vue$/, /\.astro$/, /\.svelte$/],
     [/[\\/]node_modules[\\/]/, /[\\/]\.git[\\/]/],
   )
   const Replace2Find: Record<string, string> = {}

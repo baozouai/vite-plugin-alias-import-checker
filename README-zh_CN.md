@@ -32,7 +32,9 @@
 
 ## 🔥 Features
 
-
+- Support different files ——  👉 .js, .jsx, .ts, .tsx, .vue, .svelte, and .astro
+- 支持报错级别：error | warn
+  
 > 更多用法，请看[示例](#-例子)
 
 ## 📦  安装
