@@ -32,7 +32,7 @@ English | [中文](./README-zh_CN.md)
 
 ## 🔥 Features
 
-- 支持不同的文件 —— 👉 .js、.jsx、.ts、.tsx、.vue、.svelte 和 .astro
+- Support different files ——  👉 .js, .jsx, .ts, .tsx, .vue, .svelte, and .astro
 - support error level: error | warn
   
 > for more usage please see the [examples](#-example)
