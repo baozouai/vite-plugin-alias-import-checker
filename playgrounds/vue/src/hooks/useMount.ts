@@ -1,4 +1,4 @@
-import {  ref, onMounted } from 'vue'
+import { ref, onMounted } from 'vue'
 
 export function useMounted() {
   const isMounted = ref(false)

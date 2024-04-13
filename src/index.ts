@@ -1,11 +1,11 @@
-import { dirname } from 'path';
+import { dirname } from 'node:path';
 import { type Plugin, createFilter } from 'vite';
 /**
  * 检测 alias import
  */
 export default function ResolveImportChecker() {
   const filter = createFilter(
-    [/\.[jt]sx?$/, /\.vue$/],
+    [/\.[jt]sx?$/, /\.vue$/, /\.astro$/],
     [/[\\/]node_modules[\\/]/, /[\\/]\.git[\\/]/],
   );
   const Replace2Find: Record<string, string> = {};
@@ -67,7 +67,7 @@ export default function ResolveImportChecker() {
                 // biome-ignore lint/suspicious/noExplicitAny: <explanation>
                 const start = (item as any).start as number;
 
-                const message = `【${importSource}】请使用${Replace2Find[importCtxReaplace as string]}引入 `;
+                const message = `please use ${Replace2Find[importCtxReaplace as string]} to import instead of【${importSource}】 `;
                 this.error(message, start);
               }
             }

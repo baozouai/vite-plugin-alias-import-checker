@@ -60,12 +60,7 @@ import aliasImportChecker from 'vite-plugin-alias-import-checker'
 
 const config = defineConfig({
   plugins: [
-    // 如果用vue, 请确保 vuePlugin 在 log plugin 之前
-    aliasImportChecker({
-      splitBy: '\n',
-      preTip: '🐖🐖🐖🐖🐖🐖🐖🐖🐖🐖',
-      enableFileName: true, // or enableFileName: { enableDir: false}
-    }),
+    aliasImportChecker(),
   ],
 })
 
@@ -88,6 +83,9 @@ play play:astro # 对应astro
 具体配置可以看 [vue/vite.config.ts](./playgrounds/vue/vite.config.ts) 或者 [react/vite.config.ts](./playgrounds/react/vite.config.ts)、[astro.config.mjs](./playgrounds/astro/astro.config.mjs)
 
 
+> ![img](./assets/vue-demo.png)
+> ![img](./assets/react-demo.png)
+> ![img](./assets/astro-demo.png)
 
 ## 📄 协议
 

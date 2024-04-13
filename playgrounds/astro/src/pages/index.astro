@@ -1,41 +1,19 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+// please use @common to import instead of【../common】
+// import { constValue } from '../common'
+import { constValue } from '@common'
 
-
-	const a = 1
-const b = {
-	c: {
-		d: 2
-	}
-}
-
-console.log(1, 2, 3, a, b)
-console.log(1, 2, 3, a, b)
-console.log(1, 2, 3, a, b)
-console.log(1, 
-2, 
-3, 
-a, 
-b)
-
-
+console.log(constValue)
 ---
 
 <script>
-		const a = 11
-const bb = {
-	cc: {
-		dd: 22
-	}
-}
+// please use @common to import instead of【../common】
+import { log1 } from '../common'
+// import { log1 } from '@common'
 
-console.log(1, 2, 3, 
-
-
-a, bb)
-
-
+log1()
 </script>
 
 <Layout title="W11elcome to Astro.">

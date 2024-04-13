@@ -59,6 +59,7 @@
     "typescript": "^5.4.5",
     "unbuild": "^1.2.1",
     "vite": "^5.2.8",
+    "vite-plugin-enhance-log": "^0.6.1",
     "vite-plugin-inspect": "^0.7.16",
     "vitest": "^0.30.1"
   },

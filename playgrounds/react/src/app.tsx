@@ -1,23 +1,31 @@
 import type { FC } from 'react'
-import DeepFile from './xxx/yyy/zzzzzzzzzzz'
+
+
+import { constValue } from '@common/const'
+import { useCommon } from '@common/utils'
+import { useIsMounted } from './hooks';
+import Demo from './components/demo'
+import Log1 from './components/log1'
+
+
+
 
 const index: FC = () => {
-  const a = 1
-  const b = 2
-  console.log(a, b)
+
+  const isMounted = useIsMounted()
+
+useCommon()
+
   return (
     <div>
-      <button onClick={() => {
-        debugger
-        console.log(a, b)
-      }}>点击log a和b</button>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <DeepFile />
+      <h1>app.tsx constValue: { constValue }</h1>
+      <h2>app.tsx mounted: { isMounted }</h2>
+      <br/> 
+      <Demo /> 
+      <Log1 /> 
     </div>
   )
 }
+
 
 export default index

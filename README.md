@@ -83,6 +83,9 @@ pnpm play:astro # corresponds to astro
 
 For specific configuration, see [vue/vite.config.ts](./playgrounds/vue/vite.config.ts) or [react/vite.config.ts](./playgrounds/react/vite.config.ts), [astro.config.mjs](./playgrounds/astro/astro.config.mjs)
 
+> ![img](./assets/vue-demo.png)
+> ![img](./assets/react-demo.png)
+> ![img](./assets/astro-demo.png)
 
 
 ## 📄 License
