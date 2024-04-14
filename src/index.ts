@@ -19,7 +19,7 @@ export default function ResolveImportChecker(options?: ResolveImportCheckerOptio
   let replaceRegExp: RegExp
 
   return {
-    name: 'resolve-import-checker',
+    name: 'alias-import-checker',
     enforce: 'post',
     apply: 'serve',
     configResolved(config) {
