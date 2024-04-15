@@ -6,6 +6,8 @@
 <div align="center">
   a vite plugin designed to validate and ensure the correctness of alias imports in your project.
 
+<img src='./assets/astro-error-demo.png'/>  
+
  [![NPM version][npm-image]][npm-url] ![NPM downloads][download-image]
 
 ![Test][test-badge] 

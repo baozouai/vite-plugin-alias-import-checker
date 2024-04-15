@@ -6,6 +6,8 @@
 <div align="center">
   一个用来检查是否通过 `alias` 而不是相对路径 引入的 vite 插件
 
+<img src='./assets/astro-error-demo.png'/>  
+
 [![NPM version][npm-image]][npm-url] ![NPM downloads][download-image]
 
 ![Test][test-badge] 
