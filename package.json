@@ -1,7 +1,7 @@
 {
   "name": "vite-plugin-alias-import-checker",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "packageManager": "pnpm@8.3.1",
   "description": "A vite plugin designed to validate and ensure the correctness of alias imports in your project.",
   "author": "baozouai <baozouai@gmail.com>",
