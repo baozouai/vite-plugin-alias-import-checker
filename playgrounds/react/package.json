@@ -2,8 +2,8 @@
   "name": "react",
   "private": true,
   "scripts": {
-    "dev": "nodemon --watch ../../dist/*.js -x 'DEBUG=vite-plugin-alias-import-checker:* vite'",
-    "build": "DEBUG=vite-plugin-alias-import-checker vite build",
+    "dev": "vite",
+    "build": "vite build",
     "serve": "vite preview"
   },
   "dependencies": {
